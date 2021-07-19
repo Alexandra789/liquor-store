@@ -136,15 +136,15 @@ a{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 78%;
-
+    bottom: 41%;
     .wine-list {
       margin-right: 30px;
     }
 
     button {
       &:hover {
-        background-color: #E6E3C4;
+        border: 1px solid white;
+        background-color: #282828;
       }
     }
   }
