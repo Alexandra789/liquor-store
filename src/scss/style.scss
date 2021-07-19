@@ -10,6 +10,7 @@ body {
   color: white;
   background-color: #998431;
   text-transform: uppercase;
+  border: 1px solid #998431;
   padding: 15px 30px;
   font-family: Montserrat;
   font-size: 16px;
@@ -17,6 +18,14 @@ body {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.05em;
+}
+
+.subtitle{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .text{
@@ -38,6 +47,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 54px;
+  position: relative;
 
   &::after {
     content: "";
@@ -129,6 +139,11 @@ a{
       margin-right: 30px;
     }
     .wine-tasting{}
+    button{
+      &:hover{
+        background-color:#E6E3C4;
+      }
+    }
   }
 }
 
@@ -156,8 +171,8 @@ a{
 
     &::after {
       width: 160px;
-      right: 45%;
-      padding-top: 40px;
+      right: 40%;
+      margin-top: 90px;
     }
   }
 
@@ -165,84 +180,185 @@ a{
   }
 }
 
-.collection{
+.collection {
   background: #E6E3C4;
   padding: 80px 0px;
-  .collection-wrapper{
+
+  .collection-wrapper {
     border: 1px solid #998431;
     border-left: none;
     border-right: none;
     padding: 60px 0px;
     display: flex;
     justify-content: space-between;
-    .information-wrapper{
+
+    .information-wrapper {
       max-width: 445px;
-    }
-    &__text{}
-    &__title{
-      margin-bottom: 60px;
-      &::after {
-        width: 160px;
-        right: 45%;
-        padding-top: 30px;
-      }
-    }
-    .subtitle{
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 21px;
-      text-align: left;
-      margin: 30px 0px;
-    }
-    .table{
-      .wrap{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        border-bottom: 1px solid #282828;
-
-        .year{
-          margin-top: 31px;
-          margin-bottom: 26px;
-          font-family: Montserrat;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 21px;
-        }
-      }
-      .title-wrap{
-          border-left: 1px solid;
-          padding-left: 30px;
-      }
-
-      &__title-eng{
-        font-family: Playfair Display;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 27px;
-        margin-top: 10px;
-        margin-bottom: 0px;
-      }
-      &__title-rus{
-        margin-top: 5px;
-        margin-bottom: 15px;
-      }
-    }
-    .images-wrapper{
-      max-width: 540px;
-      img{
-        &:first-child{
-          margin-bottom: 30px;
-        }
-        &:last-child{
-          margin-left: 26px;
-        }
-      }
     }
   }
 
+  &__text {
+  }
+
+  &__button{
+    &:hover{
+      background-color: #E6E3C4;
+    }
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    &::after {
+      left: 0;
+      width: 160px;
+      margin-top: 80px;
+      border-color: #282828;
+    }
+  }
+
+  &__subtitle {
+    text-align: left;
+    margin: 30px 0px;
+  }
+
+  .table {
+    .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border-bottom: 1px solid #282828;
+
+      .year {
+        margin-top: 31px;
+        margin-bottom: 26px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+      }
+    }
+
+    .title-wrap {
+      border-left: 1px solid;
+      padding-left: 30px;
+    }
+
+    &__title-eng {
+      font-family: Playfair Display;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 27px;
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+
+    &__title-rus {
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .images-wrapper {
+    max-width: 540px;
+
+    img {
+      &:first-child {
+        margin-bottom: 30px;
+      }
+
+      &:last-child {
+        margin-left: 26px;
+      }
+    }
+  }
+}
+
+.delivery {
+  background: #282828;
+  padding: 100px 0px;
+
+  .delivery-wrapper {
+    color: white;
+    border: 1px solid white;
+    padding-bottom: 90px;
+    border-top: none;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  input{
+    border: none;
+    background: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .address{
+    display: block;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+    &::after {
+      width: 160px;
+      right: 35%;
+      margin-top: 90px;
+    }
+  }
+
+  .wrap {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    bottom: 36px;
+  }
+
+  .line{
+    border-bottom: 1px solid white;
+    width: 170px;
+    position: relative;
+    bottom: 76%;
+  }
+
+  img {
+    position: relative;
+    right: 40px;
+    width: 260px;
+    height: 260px;
+    &:last-child{
+      height: 200px;
+      left: 100px;
+    }
+  }
+  .form{
+    .input-wrapper{
+      input{
+        width: 255px;
+        margin-right: 30px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+    &__button{
+      &:hover{
+        border: 1px solid white;
+        background-color: #282828;
+      }
+    }
+  }
 }
