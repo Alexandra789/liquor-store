@@ -31,6 +31,7 @@ a{
 }
 
 .header {
+  height: 869px;
   .container {
     .contact-information {
       display: flex;
@@ -107,5 +108,51 @@ a{
       margin-right: 30px;
     }
     .wine-tasting{}
+  }
+}
+
+.description{
+  background-color: #282828;
+  color: white;
+  padding: 100px 0px;
+  .descriprion-wrapper {
+    padding: 60px 187px;
+    text-align-last: center;
+    width: 736px;
+    margin: 0 auto;
+    border: 1px solid white;
+
+
+    .text {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 50px;
+      text-align:center;
+    }
+
+    .title {
+      font-family: Playfair Display;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 54px;
+      margin-bottom: 80px;
+
+      &::after {
+        content: "";
+        border-bottom: 1px solid white;
+        width: 160px;
+        position: absolute;
+        right: 45%;
+        padding-top: 40px;
+        height: 48px;
+      }
+    }
+
+    img {
+    }
   }
 }
