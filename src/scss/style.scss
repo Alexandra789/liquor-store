@@ -20,6 +20,26 @@ body {
   letter-spacing: 0.05em;
 }
 
+.menu {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0px;
+  justify-content: space-between;
+
+  .menu__item {
+    text-align: center;
+  }
+  a{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+  }
+}
+
 .subtitle{
   font-family: Montserrat;
   font-size: 14px;
@@ -63,6 +83,7 @@ a{
 
 .header {
   height: 869px;
+
   .container {
     .contact-information {
       display: flex;
@@ -70,12 +91,14 @@ a{
       place-items: center;
       margin-bottom: 20px;
       margin-top: 30px;
+
       .address {
       }
 
       .number {
       }
-      .address,.number{
+
+      .address, .number {
         color: white;
         font-family: Montserrat;
         font-size: 13px;
@@ -87,38 +110,27 @@ a{
 
       }
     }
-    .navigation{
-      .menu{
-        list-style-type: none;
-        display: flex;
-        padding-left: 0px;
-        justify-content: space-between;
+
+    .navigation {
+      .menu {
         .menu__item {
           border: 1px solid white;
-          /* height: 40px; */
           padding: 13px 0px;
           width: 277.5px;
-          text-align: center;
 
-          &:last-child,&:first-child{
+          &:last-child, &:first-child {
             border-left: none;
             border-right: none;
           }
-          a{
-            color: white;
-            font-family: 'Montserrat';
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 21px;
-            letter-spacing: 0em;
-            text-align: center;
-          }
+        }
+
+        &:nth-child(2) {
+          border-right: none;
         }
       }
     }
-
   }
+
   .bg-image{
     background-image: url('../../assets/images/bg-image.png');
     background-size: cover;
@@ -358,6 +370,60 @@ a{
       &:hover{
         border: 1px solid white;
         background-color: #282828;
+      }
+    }
+  }
+}
+
+.contact {
+  background: #998431;
+  .contact-wrapper{
+    padding: 50px 0px;
+  }
+  .navigation {
+    .menu {
+      justify-content: space-around;
+      border-top:1px solid white;
+      .menu__item {
+        padding-top: 20px;
+        padding-bottom: 5px;
+        a{
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .contact-information {
+    .menu {
+      .menu__item {
+        border: 1px solid white;
+        padding-top: 20px;
+        padding-bottom: 18px;
+        width: 277.5px;
+        a{
+          font-weight: 600;
+        }
+        &:last-child,&:first-child{
+          border-right: none;
+          border-left: none;
+        }
+        &:nth-child(2) {
+        border-right: none;
+        }
+        .social-icons {
+          display: flex;
+          justify-content: space-around;
+          filter: invert(1);
+          img {
+            width: 26px;
+            height: 26px;
+          }
+        }
+
+        &:first-child, &:last-child {
+          text-transform: uppercase;
+        }
       }
     }
   }
