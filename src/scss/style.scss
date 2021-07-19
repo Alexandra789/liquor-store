@@ -1,3 +1,111 @@
-body{
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+.button{
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #998431;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+
+}
+
+.container{
+  width: 1110px;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+.header {
+  .container {
+    .contact-information {
+      display: flex;
+      justify-content: space-between;
+      place-items: center;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      .address {
+      }
+
+      .number {
+      }
+      .address,.number{
+        color: white;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: right;
+
+      }
+    }
+    .navigation{
+      .menu{
+        list-style-type: none;
+        display: flex;
+        padding-left: 0px;
+        justify-content: space-between;
+        .menu__item {
+          border: 1px solid white;
+          /* height: 40px; */
+          padding: 13px 0px;
+          width: 277.5px;
+          text-align: center;
+
+          &:last-child,&:first-child{
+            border-left: none;
+            border-right: none;
+          }
+          a{
+            color: white;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+  }
+  .bg-image{
+    background-image: url('../../assets/images/bg-image.png');
+    background-size: cover;
+    place-content: center;
+    height: 900px;
+    position: relative;
+    top: -161px;
+    z-index: -1;
+    background-position: center;
+  }
+  .button-wrapper{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 78%;
+
+    .wine-list{
+      margin-right: 30px;
+    }
+    .wine-tasting{}
+  }
 }
