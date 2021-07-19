@@ -17,12 +17,33 @@ body {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.05em;
+}
 
+.text{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .container{
   width: 1110px;
   margin: 0 auto;
+}
+
+.title {
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+
+  &::after {
+    content: "";
+    border-bottom: 1px solid white;
+    position: absolute;
+  }
 }
 
 a{
@@ -111,10 +132,11 @@ a{
   }
 }
 
-.description{
+.description {
   background-color: #282828;
   color: white;
   padding: 100px 0px;
+
   .descriprion-wrapper {
     padding: 60px 187px;
     text-align-last: center;
@@ -122,37 +144,105 @@ a{
     margin: 0 auto;
     border: 1px solid white;
 
+  }
 
-    .text {
-      font-family: Montserrat;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
-      margin-bottom: 50px;
-      text-align:center;
-    }
+  &__text {
+    margin-bottom: 50px;
+    text-align: center;
+  }
 
-    .title {
-      font-family: Playfair Display;
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 54px;
-      margin-bottom: 80px;
+  &__title {
+    margin-bottom: 80px;
 
-      &::after {
-        content: "";
-        border-bottom: 1px solid white;
-        width: 160px;
-        position: absolute;
-        right: 45%;
-        padding-top: 40px;
-        height: 48px;
-      }
-    }
-
-    img {
+    &::after {
+      width: 160px;
+      right: 45%;
+      padding-top: 40px;
     }
   }
+
+  img {
+  }
+}
+
+.collection{
+  background: #E6E3C4;
+  padding: 80px 0px;
+  .collection-wrapper{
+    border: 1px solid #998431;
+    border-left: none;
+    border-right: none;
+    padding: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    .information-wrapper{
+      max-width: 445px;
+    }
+    &__text{}
+    &__title{
+      margin-bottom: 60px;
+      &::after {
+        width: 160px;
+        right: 45%;
+        padding-top: 30px;
+      }
+    }
+    .subtitle{
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+      margin: 30px 0px;
+    }
+    .table{
+      .wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-bottom: 1px solid #282828;
+
+        .year{
+          margin-top: 31px;
+          margin-bottom: 26px;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21px;
+        }
+      }
+      .title-wrap{
+          border-left: 1px solid;
+          padding-left: 30px;
+      }
+
+      &__title-eng{
+        font-family: Playfair Display;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 27px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+      &__title-rus{
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+    }
+    .images-wrapper{
+      max-width: 540px;
+      img{
+        &:first-child{
+          margin-bottom: 30px;
+        }
+        &:last-child{
+          margin-left: 26px;
+        }
+      }
+    }
+  }
+
 }
