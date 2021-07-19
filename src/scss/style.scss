@@ -5,7 +5,6 @@ body {
 }
 
 .button{
-  border: none;
   outline: none;
   color: white;
   background-color: #998431;
@@ -23,7 +22,7 @@ body {
 .menu {
   list-style-type: none;
   display: flex;
-  padding-left: 0px;
+  padding-left: 0;
   justify-content: space-between;
 
   .menu__item {
@@ -78,7 +77,6 @@ body {
 
 a{
   text-decoration: none;
-
 }
 
 .header {
@@ -92,12 +90,6 @@ a{
       margin-bottom: 20px;
       margin-top: 30px;
 
-      .address {
-      }
-
-      .number {
-      }
-
       .address, .number {
         color: white;
         font-family: Montserrat;
@@ -105,9 +97,7 @@ a{
         font-style: normal;
         font-weight: 500;
         line-height: 20px;
-        letter-spacing: 0em;
         text-align: right;
-
       }
     }
 
@@ -115,7 +105,7 @@ a{
       .menu {
         .menu__item {
           border: 1px solid white;
-          padding: 13px 0px;
+          padding: 13px 0;
           width: 277.5px;
 
           &:last-child, &:first-child {
@@ -131,7 +121,7 @@ a{
     }
   }
 
-  .bg-image{
+  .bg-image {
     background-image: url('../../assets/images/bg-image.png');
     background-size: cover;
     place-content: center;
@@ -141,19 +131,20 @@ a{
     z-index: -1;
     background-position: center;
   }
-  .button-wrapper{
+
+  .button-wrapper {
     display: flex;
     justify-content: center;
     position: relative;
     top: 78%;
 
-    .wine-list{
+    .wine-list {
       margin-right: 30px;
     }
-    .wine-tasting{}
-    button{
-      &:hover{
-        background-color:#E6E3C4;
+
+    button {
+      &:hover {
+        background-color: #E6E3C4;
       }
     }
   }
@@ -162,7 +153,7 @@ a{
 .description {
   background-color: #282828;
   color: white;
-  padding: 100px 0px;
+  padding: 100px 0;
 
   .descriprion-wrapper {
     padding: 60px 187px;
@@ -170,7 +161,6 @@ a{
     width: 736px;
     margin: 0 auto;
     border: 1px solid white;
-
   }
 
   &__text {
@@ -194,22 +184,19 @@ a{
 
 .collection {
   background: #E6E3C4;
-  padding: 80px 0px;
+  padding: 80px 0;
 
   .collection-wrapper {
     border: 1px solid #998431;
     border-left: none;
     border-right: none;
-    padding: 60px 0px;
+    padding: 60px 0;
     display: flex;
     justify-content: space-between;
 
     .information-wrapper {
       max-width: 445px;
     }
-  }
-
-  &__text {
   }
 
   &__button{
@@ -231,7 +218,7 @@ a{
 
   &__subtitle {
     text-align: left;
-    margin: 30px 0px;
+    margin: 30px 0;
   }
 
   .table {
@@ -264,7 +251,7 @@ a{
       font-weight: 700;
       line-height: 27px;
       margin-top: 10px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
 
     &__title-rus {
@@ -290,7 +277,7 @@ a{
 
 .delivery {
   background: #282828;
-  padding: 100px 0px;
+  padding: 100px 0;
 
   .delivery-wrapper {
     color: white;
@@ -377,17 +364,21 @@ a{
 
 .contact {
   background: #998431;
-  .contact-wrapper{
-    padding: 50px 0px;
+
+  .contact-wrapper {
+    padding: 50px 0;
   }
+
   .navigation {
     .menu {
       justify-content: space-around;
-      border-top:1px solid white;
+      border-top: 1px solid white;
+
       .menu__item {
         padding-top: 20px;
         padding-bottom: 5px;
-        a{
+
+        a {
           font-weight: 400;
         }
       }
@@ -401,20 +392,25 @@ a{
         padding-top: 20px;
         padding-bottom: 18px;
         width: 277.5px;
-        a{
+
+        a {
           font-weight: 600;
         }
-        &:last-child,&:first-child{
+
+        &:last-child, &:first-child {
           border-right: none;
           border-left: none;
         }
+
         &:nth-child(2) {
-        border-right: none;
+          border-right: none;
         }
+
         .social-icons {
           display: flex;
           justify-content: space-around;
           filter: invert(1);
+
           img {
             width: 26px;
             height: 26px;
