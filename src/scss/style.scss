@@ -263,9 +263,11 @@ a{
   }
 
   &__button{
-    @media (max-width: 992px) {
+
+    @media (max-width: 1200px) {
       margin-bottom: 30px;
     }
+
     &:hover{
       background-color: #E6E3C4;
     }
@@ -335,17 +337,37 @@ a{
 
   .images-wrapper {
     max-width: 540px;
+
+    @media (max-width: 1200px) {
+        max-width: 300px;
+    }
+    @media (max-width: 992px) {
+      max-width: 250px;
+    }
     @media (max-width: 767px) {
       display: none;
     }
 
     img {
+      @media (max-width: 1200px) {
+        width: 300px;
+      }
+      @media (max-width: 992px) {
+        width: 250px;
+      }
       &:first-child {
         margin-bottom: 30px;
+        @media (max-width: 1200px) {
+          height: 270px;
+        }
       }
 
       &:last-child {
         margin-left: 26px;
+        @media (max-width: 1200px) {
+          margin-left: 0;
+          margin-top: 30px;
+        }
       }
     }
   }
@@ -443,7 +465,7 @@ a{
       left: 70px;
       @media (max-width: 1200px) {
         height: 115px;
-        left: 30px;
+        left: 11px;
       }
     }
   }
