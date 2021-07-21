@@ -25,13 +25,30 @@
                 <li class="menu__item"><a href="#contact">Контакты</a></li>
             </ul>
         </nav>
+        <div class="hamburger-menu">
+            <label class="menu__btn">
+                <span></span>
+            </label>
+            <div class="menu__box">
+                <div class="menu-top">
+                    <p class="address">Новокузнечный переулок 4/1</p>
+                    <a href="tel:+88121234567" class="number">8(812)123-45-67</a>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#сatalog">Каталог</a></li>
+                    <li class="menu__item"><a href="#delivery">Доставка</a></li>
+                    <li class="menu__item"><a href="#collection">Коллекции</a></li>
+                    <li class="menu__item"><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="bg-image">
 
     </div>
     <div class="button-wrapper">
-        <button class="button wine-list">Винная карта</button>
-        <button class="button wine-tasting">Дегустация</button>
+        <a class="button wine-list">Винная карта</a>
+        <a class="button wine-tasting">Дегустация</a>
     </div>
 </header>
 <section class="description">
@@ -113,22 +130,22 @@
         <div class="delivery-wrapper">
             <div class="wrap">
                 <img src="./assets/images/berry.png" alt="img">
-                <div class="line"></div>
+<!--                <div class="line"></div>-->
                 <div class="text-wrap">
-                    <h2 class="title delivery__title">Запись на дегустацию</h2>
+                    <h2 class="title delivery__title"><span>Запись на дегустацию</span></h2>
                     <p class="subtitle delivery__subtitle">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Feugiat enim tortor in hac id imperdiet adipiscing.
                         Pellentesque nisi, mi sit non sit sed fermentum.
                     </p>
                 </div>
-                <div class="line"></div>
+<!--                <div class="line"></div>-->
                 <img src="./assets/images/keg.png" alt="img">
             </div>
             <form action="" class="form">
                 <div class="input-wrapper">
                     <input type="text" class="name" placeholder="Имя">
-                    <input type="tel" class="phone" placeholder="Телефон">
+                    <input type="phone" class="phone" placeholder="Телефон">
                 </div>
                 <input type="text" class="address" placeholder="Бутик на Невском 103">
                 <button class="button form__button">Записаться</button>
@@ -165,6 +182,7 @@
             </div>
         </div>
     </div>
+    <script src="build/js/main.min.js"></script>
 </footer>
 </body>
 </html>
