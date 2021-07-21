@@ -534,9 +534,11 @@ a{
     &__button{
       display: block;
       width: 100%;
+      background: #282828;
+      border: 1px solid white;
       &:hover{
-        border: 1px solid white;
-        background-color: #282828;
+        background: white;
+        color: black;
       }
     }
   }
