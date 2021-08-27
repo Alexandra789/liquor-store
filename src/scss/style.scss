@@ -31,7 +31,6 @@ body {
   .menu__item {
     align-self: center;
     @media (max-width: 575px) {
-      //margin-bottom: 50px;
       &:last-child {
         margin-bottom: 0;
       }
@@ -147,13 +146,8 @@ a{
               border-left: 1px solid white;
             }
           }
-
-          //width: 277.5px;
           a {
-            //border: 1px solid white;
             padding: 13px 0;
-
-
           }
         }
       }
@@ -569,35 +563,23 @@ a{
         justify-content: normal;
         padding: 0;
       }
-      //padding: 0 40px;
       margin-bottom: 0;
+
       .menu__item {
         width: auto;
         width: 200px;
         @media (max-width: 992px) {
-          //width: 200px;
           padding-right: 49px;
-          //border-right: 1px solid white;
-          //&:last-child{
-            //border-right: none;
-          //}
-          @media (max-width: 767px){
+          @media (max-width: 767px) {
             padding-right: 0;
             padding-left: 35px;
           }
           @media (max-width: 575px) {
-
+            padding-left: 0;
           }
         }
 
-        &:last-child{
-          //padding-right: 45px;
-        }
-
         a {
-          //padding-top: 20px;
-          //padding-bottom: 20px;
-          //padding-left: 10px;
           padding: 20px 0;
           font-weight: 400;
         }
@@ -613,16 +595,10 @@ a{
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-top: 10px;
-        //max-width: 320px;
-      }
-      @media (max-width: 767px) {
-
-        //flex-wrap: wrap;
       }
       .menu__item {
         border: 1px solid white;
         width: 277.5px;
-        //width: 277.5px;
         a {
           padding-top: 20px;
           padding-bottom: 18px;
@@ -639,10 +615,6 @@ a{
             border-right: 1px solid white;
             border-left: 1px solid white;
           }
-          //@media (max-width: 575px) {
-          //  border-right: 1px solid white;
-          //  border-left: 1px solid white;
-          //}
         }
 
         &:nth-child(2) {
@@ -697,7 +669,7 @@ a{
 }
 
 @media (max-width: 575px) {
-  .container{
+  .container {
     max-width: 305px;
   }
 }
